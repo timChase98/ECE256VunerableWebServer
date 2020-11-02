@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+
+<body>
+	<form method="post">
+		{% csrf_token %}
+		Command to Run
+		<input type="text" name="cmd">
+		<input type="submit">
+	</form>
+
+	Responce last time was:
+	{{rst|linebreaksbr}}
+</body>
+
+</html>
